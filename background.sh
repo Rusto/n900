@@ -1,13 +1,23 @@
-#!/bin/sh
+#!/bin/bash
 
-# проверка определенной директории на появление новых файлов
+# папка откуда будут браться новые обои
+source_dir="/home/rusto/develop/background/source/"
 
-# конвертировать изображения под экран n900
-while ls
+# и папка куда будут складываться обработанные
+target_dir="/home/rusto/develop/background/target/"
 
-convert -sample 800x480 ${2} /home/user/.backgrounds/background-${1}.png
+# создаем список файлов для конвертации
+SOURCE_FILES=( $(ls $source_dir*.jpg) )
 
-1 /1.jpg
-2 /2.jpg
-3 /3.jpg
-4 /4.jpg
+i=1
+
+# проходим циклом по файлам
+for raw_file in ${SOURCE_FILES[@]}
+do
+    # подгоняем картинку под размер экрана
+    convert -sample 800x480 $raw_file $target_dir$i.png
+
+    # удаляем исходник
+    rm $raw_file
+    ((i++))
+done
