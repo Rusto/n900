@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # папка откуда будут браться новые обои
-source_dir="/home/rusto/develop/background/source/"
+source_dir="/home/user/MyDocs/.images/source/"
 
 # и папка куда будут складываться обработанные
-target_dir="/home/rusto/develop/background/target/"
+target_dir="/home/user/.backgrounds/background-"
 
 # создаем список файлов для конвертации
 SOURCE_FILES=( $(ls $source_dir*.jpg) )
