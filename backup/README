@@ -1,0 +1,50 @@
+settings:
+  text input:
+    use virtual keyboard [enable], word completion [enable], auto-capitalisation [disable], 2nd language [русский], use dual dictionaries [enable]
+
+  internet connections:
+    cellar connection [rename], connect automatically [always ask]
+
+  phone:
+    network mode [gsm - если нет мобильного интернета, иначе - dual]
+
+web -> yandex -> cssu maemo [maemo testing]
+
+x terminal:
+  font [monospace bold, 12; green - black]
+
+community ssu [update system]
+
+application managers:
+  faster application manager [install, copy repositories, tuning]
+  application manager [disable repositories]
+  faster application manager [update system]
+
+interface:
+  advanced interface switcher [install, tuning]
+  advanced clock plugin [install, tuning]
+
+recovery system:
+  copy /etc/hildon-application-manager/catalogues [recovery repository]
+  copy /home/user/.calendar/calendars [recovery calendar]
+  copy /home/user/.osso-abook [recovery contacts]
+  copy /home/user/.config/alarmd [recovery alarmd config]
+  copy /etc/conky [recovery conky config]
+  copy /etc/mce [recovery config of led indicator]
+  
+  # pin [switch sim-card]
+  # change hostname
+  # tuning powerkey-menu
+  # copy wallpapers
+  # copy ringtones
+
+settings:
+  location [location server: suol.google.com]
+
+tuning:
+  lens cover reminder, faster application manager, orecchiette, openvpn, mail, clock [часовые пояса], cutetube [качество скачиваемого видео, аккаунты], swappolube [выставляем оптимальные], контакты [порядок фио], mappero, desktops
+
+remove:
+  foreca-weather-applet, ovi by nokia, google, sharing-service-ovi, sharing-service-flickr
+
+hide unused applications
