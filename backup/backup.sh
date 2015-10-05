@@ -36,5 +36,6 @@ echo "osso-addressbook-backup -e "$fullpath"/osso-addressbook-backup" | su - use
 run-standalone.sh dbus-send --type=method_call --dest=org.freedesktop.Notifications /org/freedesktop/Notifications org.freedesktop.Notifications.SystemNoteInfoprint string:"arhiving..."
 
 tar -cvjf "$path"/"$name".tar.bz2 "$fullpath"
+rm -R "$fullpath"
 
 run-standalone.sh dbus-send --type=method_call --dest=org.freedesktop.Notifications /org/freedesktop/Notifications org.freedesktop.Notifications.SystemNoteInfoprint string:"backup created"
