@@ -48,3 +48,5 @@ remove:
   foreca-weather-applet, ovi by nokia, google, sharing-service-ovi, sharing-service-flickr
 
 hide unused applications
+
+добавить при восстановлении: если есть /bin/bash, то переделать символическую ссылку /bin/@sh на bash
