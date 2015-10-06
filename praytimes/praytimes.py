@@ -516,7 +516,7 @@ class PrayTimes():
 		hijraDay = precise
 		if hijraYear < 1: hijraYear -= 1
 
-		return str(hijraDay) + " " + self.months[hijraMonth - 1] + " " + str(int(hijraYear)) + ", " + self.weekDays[timeTuple[6]]
+		return str(hijraDay) + "\n" + self.months[hijraMonth - 1] + "\n" + str(int(hijraYear)) + "\n" + self.weekDays[timeTuple[6]]
 
 	#---------------------- Misc Functions -----------------------
 
@@ -589,5 +589,5 @@ if __name__ == "__main__":
 	##
 	#
 
-	for i in ['Imsak', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Sunset', 'Maghrib', 'Isha', 'Midnight']:
+	for i in ['Imsak', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha', 'Midnight']:
 		print(i+ ': '+ times[i.lower()])
