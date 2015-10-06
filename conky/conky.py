@@ -11,6 +11,12 @@ target = open('conky.conf', 'w')
 
 inserting = 0
 for line in source.readlines():	
+
+
+	if "HIJRADAY" in line:
+		line.replace('HIJRADAY', praytimes.readline().replace('\n', ''))
+
+
 	if "${color grey}${goto 225}Top CPU" in line: inserting += 1
 	if (inserting):
 		if inserting == 1:
