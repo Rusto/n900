@@ -2,7 +2,6 @@
 #!/usr/bin/env python
 # compatible with python 2.x and 3.x
 
-#import math
 import numpy
 import re
 import calendar
@@ -295,9 +294,7 @@ class PrayTimes():
 		if month <= 2:
 			year -= 1
 			month += 12
-#		A = numpy.floor(year / 100)
 		A = numpy.floor(year / 100)
-#		B = 2 - A + numpy.floor(A / 4)
 		B = 2 - A + numpy.floor(A / 4)
 #		return numpy.floor(365.25 * (year + 4716)) + numpy.floor(30.6001 * (month + 1)) + day + B - 1524.5
 		return numpy.floor(365.25 * (year + 4716)) + numpy.floor(30.6001 * (month + 1)) + day + B - 1524.5
@@ -538,7 +535,6 @@ class PrayTimes():
 
 	#----------------- Degree-Based Math Functions -------------------
 
-#	def sin(self, d): return numpy.sin(numpy.radians(d))
 	def sin(self, d): return numpy.sin(numpy.radians(d))
 	def cos(self, d): return numpy.cos(numpy.radians(d))
 	def tan(self, d): return numpy.tan(numpy.radians(d))
@@ -554,10 +550,8 @@ class PrayTimes():
 	def fixhour(self, hour): return self.fix(hour, 24.0)
 
 	def fix(self, a, mode):
-#		if numpy.isnan(a):
 		if numpy.isnan(a):
 			return a
-#		a = a - mode * (numpy.floor(a / mode))
 		a = a - mode * (numpy.floor(a / mode))
 		return a + mode if a < 0 else a
 
@@ -572,7 +566,7 @@ prayTimes.adjust({"asr": 'Hanafi'})
 # sample code to run in standalone mode only
 if __name__ == "__main__":
 	date = datetime.date.today()
-	print('Prayer Times for ' + date.strftime("%e %b %Y, %A") + ' in Karaganda/Kazakhstan')
+	#print('Prayer Times for ' + date.strftime("%e %b %Y, %A") + ' in Karaganda/Kazakhstan')
 	if ((date.month == 3) and (date.day >= 20)) or ((date.month > 3) and (date.month < 9)) or ((date.month == 9) and (date.day <= 21)): prayTimes.adjust({"isha": '-95 min'})
 	else: prayTimes.adjust({"isha": '-90 min'})
 	times = prayTimes.getTimes(date.today(), (49.89362, 73.18815), 6);
