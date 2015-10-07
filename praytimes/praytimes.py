@@ -571,7 +571,7 @@ if __name__ == "__main__":
 	else: prayTimes.adjust({"isha": '-90 min'})
 	times = prayTimes.getTimes(date.today(), (49.89362, 73.18815), 6);
 	print prayTimes.getHijra(date)
-	print '=' * 20
+	#print '=' * 20
 
 	#
 	##
@@ -584,10 +584,11 @@ if __name__ == "__main__":
 	timesMWL = prayTimesMWL.getTimes(date.today(), (49.89362, 73.18815), 6);
 	for i in ['Imsak', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Sunset', 'Maghrib', 'Isha', 'Midnight']:
 		if timesMWL[i.lower()] <> times[i.lower()]: times[i.lower()] = timesMWL[i.lower()] + "/" + times[i.lower()]
-		if i == prayTimes.hijraTimeName: times[i.lower()] = times[i.lower()] + " *"
+		#if i == prayTimes.hijraTimeName: times[i.lower()] = times[i.lower()] + " *"
 	###
 	##
 	#
 
 	for i in ['Imsak', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha', 'Midnight']:
-		print(i+ ': '+ times[i.lower()])
+		#print(i+ ': '+ times[i.lower()])
+		print(times[i.lower()])
