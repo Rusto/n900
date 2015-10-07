@@ -132,8 +132,8 @@ class PrayTimes():
 	#epoch = 2400000.5
 	fractionalMonth = 29.53058796
 
-	weekDays = ["al-Ithnayn", "ath-Thulāthāʼ", "al-Arbi‘ā’", "al-Khamīs", "al-Jumu‘ah", "as-Sabt", "al-Aḥad"]
-	months = ["Muḥarram", "Ṣafar", "Rabī‘ al-Awwal", "Rabī‘ ath-Thānī", "Jumādá al-Ūlá", "Jumādá ath-Thāniyah", "Rajab", "Sha‘bān", "Ramaḍān", "Shawwāl", "Dhū al-Qa‘dah", "Dhū al-Ḥijjah"]
+	weekDays = ["al-Ithnayn", "ath-Thulāthā'", "al-Arbi'ā'", "al-Khamīs", "al-Jumu'ah", "as-Sabt", "al-Ahad"]
+	months = ["Muharram", "Safar", "Rabī' al-Awwal", "Rabī' ath-Thānī", "Jumādá al-Ūlá", "Jumādá ath-Thāniyah", "Rajab", "Sha'bān", "Ramadān", "Shawwāl", "Dhū al-Qa'dah", "Dhū al-Hijjah"]
 
 
 	#---------------------- Default Settings --------------------
